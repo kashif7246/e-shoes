@@ -3,7 +3,7 @@ const Connection = async () => {
   const URL = process.env.DB_URI;
   console.log(URL,"url url url");
   try {
-    await mongoose.connect(`mongodb+srv://samia:1234@cluster0.oysuehh.mongodb.net/test?retryWrites=true&w=majority`, {
+    await mongoose.connect(URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
