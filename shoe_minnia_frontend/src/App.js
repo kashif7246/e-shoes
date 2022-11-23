@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./component/Home/Home";
 import ContainerToast from "./component/Toast/ToastContainer";
 import ProductDetails from "./component/Product/ProductDetails";
-import Products from "./component/";
+import Products from "./component/Product/Products";
 import Login from "./component/User/Login";
 import SignUp from "./component/User/SignUp";
 import Cart from "./component/Cart/Cart.js";

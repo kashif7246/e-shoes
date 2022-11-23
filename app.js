@@ -30,10 +30,11 @@ app.use("/api", Order);
 
 // app.use(express.static("PRODUCT_FILES"));
 // app.use("PRODUCT_FILES",express.static("PRODUCT_FILES"))
-if (process.env.NODE_ENV === "PRODUCTION") {
+if (process.env.NODE_ENV !== "PRODUCTION") {
   app.use(express.static("shoe_minnia_frontend/build"));
+
 }
-// app.use(express.static(path.join(__dirname, "../shoe_minnia_frontend/build")));
+app.use(express.static(path.join(__dirname, "../shoe_minnia_frontend/build")));
 
 app.get("*", (req, res) => {
   res.sendFile(
